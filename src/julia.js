@@ -50,7 +50,7 @@ scene.add( plane );
 //   material.uniforms.u_mouse.value.y = - ( event.clientY / screenHeight ) * 2 + 1;
 // })
 
-document.addEventListener('wheel', (event) => {
+document.addEventListener('scroll', (event) => {
   material.uniforms.zoom.value += event.deltaY * 0.00001;
 })
 
